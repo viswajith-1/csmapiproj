@@ -1,8 +1,5 @@
 from django.db import models
 
-# Create your models here.
-from django.db import models
-
 class Role(models.Model):
     RoleId = models.AutoField(primary_key=True)
     RoleName = models.CharField(max_length=100)

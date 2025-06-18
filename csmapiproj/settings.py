@@ -78,10 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'csmdb',
-        'PASSWORD': '1234',
-        'USER': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': 'djangemsfaith2.cnqui8gi2qtf.us-east-2.rds.amazonaws.com',
+        'USER': 'admin',
+        'PASSWORD': 'viswajith123',
+        'PORT': 3306
     }
 }
 
@@ -126,3 +126,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from .local_settings import *
+    
+    
+except ImportError:
+    pass
+

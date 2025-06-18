@@ -19,4 +19,3 @@ admin.site.register(LabTestCategory)
 admin.site.register(LabTest)
 admin.site.register(LabTestPrescription)
 
-

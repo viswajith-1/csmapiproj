@@ -1,3 +1,4 @@
+
 from django.contrib import admin
 from .models import Role,Staff,Specialization,Doctor,Membership,Patient,Appointment,MedicineCategory,Medicine,MedicinePrescription,Consultation,MedicineStock,LabTestCategory,LabTest,LabTestPrescription
 
@@ -17,3 +18,4 @@ admin.site.register(MedicineStock)
 admin.site.register(LabTestCategory)
 admin.site.register(LabTest)
 admin.site.register(LabTestPrescription)
+
